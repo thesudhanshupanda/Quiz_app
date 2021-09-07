@@ -1,0 +1,61 @@
+var readlinesync = require("readline-sync");
+
+var userName = readlinesync.question("Hey! let us know your name.");
+var score =0 , question , answer;
+console.log(                                                   );
+console.log( userName + ", this game will test your knowledge how better you know Sudhansu Panda");
+
+function cricplay (question, answer) {
+var userAnswer = readlinesync.question(question);
+
+if(userAnswer == answer){
+console.log("correct! you have earned a point.");
+score++;
+}else{
+  console.log("Incorrect answer! no points earned.");
+}
+}
+
+var arr =[ 
+  {
+    question :
+"Where do i live ?", 
+
+answer :"Mumbai"
+}, 
+{question :
+"Where do i work currenlty? ", 
+
+answer :"Capgemini"
+},
+{question:
+"Who is my favourite circket player? ", 
+
+answer :"Virat Kohli"
+  },
+ 
+  
+]
+
+for (var i=0; i< arr.length ; i++)
+{ 
+  var currentQuestion = arr[i];
+
+cricplay (currentQuestion.question, currentQuestion.answer);
+console.log("-----------------------------------");
+
+}
+
+console.log(" Your score is " + score);
+console.log(" Highesh score as below :");
+
+var Name, Score;
+var highScore = [{Name : "Bidisha",Score:"3"}, {Name : "Viraj", Score:"3"}]
+
+// var highScore = [ "Bidisha" , "Viraj"]
+for (i=0 ; i<highScore.length; i++){
+  var s = highScore[i];
+  
+console.log(s.Name, s.Score);
+}
+
