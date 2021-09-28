@@ -24,6 +24,17 @@ var arr =[
 answer :"Mumbai"
 }, 
 {question :
+  "Which is my favourite color", 
+  
+  answer :"Blue"
+  },
+  
+  {question :
+  "What is my age? ", 
+  
+  answer :"22"
+  },
+{question :
 "Where do i work currenlty? ", 
 
 answer :"Capgemini"
@@ -50,7 +61,7 @@ console.log(" Your score is " + score);
 console.log(" Highesh score as below :");
 
 var Name, Score;
-var highScore = [{Name : "Bidisha",Score:"3"}, {Name : "Viraj", Score:"3"}]
+var highScore = [{Name : "Bidisha",Score:"5"}, {Name : "Viraj", Score:"4"}]
 
 // var highScore = [ "Bidisha" , "Viraj"]
 for (i=0 ; i<highScore.length; i++){
